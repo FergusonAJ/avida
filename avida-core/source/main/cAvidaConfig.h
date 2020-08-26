@@ -871,6 +871,11 @@ public:
   CONFIG_ADD_VAR(RES_FOR_DEME_REP, int, 0, "The amount of resources that must be consumed prior to automatic deme replication");
   CONFIG_ADD_VAR(LEARNING_COUNT, int, 0, "The number of times a task must be performed to avoid efficiency penalties");
 
+  //--------- Systematics --------------------
+  CONFIG_ADD_VAR(FILTER_TIME, int, 10000, "How long does a lineage need to survive to pass the coalesence filter?");
+  CONFIG_ADD_VAR(OEE_RES, int, 1000, "How often should we print OEE stats?");
+  CONFIG_ADD_VAR(PHYLOGENY_SNAPSHOT_RES, int, 1000, "How often should we print phylogeny stats?");
+  CONFIG_ADD_VAR(SYSTEMATICS_RES, int, 1000, "How often should we print phylodiversity stats?");
 
   // -------- DEPRECATED ---------
   CONFIG_ADD_GROUP(DEPRECATED_GROUP, "DEPRECATED (New functionality listed in comments)");
